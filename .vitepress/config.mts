@@ -1,28 +1,35 @@
 import { defineConfig } from 'vitepress'
-
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Cangjie Help",
-  description: "Cangjie Help",
+  title: "仓颉语言",
+  lastUpdated: true,
+  description: "一款由华为开发的全场景编程语言",
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/cangjie.png' }],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '首页', link: '/' },
+      { text: '教程', link: '/sdk' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '一些坑',
+        collapsed: false,
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'SDK 安装', link: '/sdk' },
+          { text: 'DevEco 配置', link: '/deveco' },
         ]
+      },
+      {
+        text: '赞助我们',
+        link: '/sponsor'
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/mournink/pit.cangjie.help' }
     ]
   }
 })
