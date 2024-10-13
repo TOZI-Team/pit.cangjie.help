@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 📚 开始阅读
-      link: /sdk
+      link: /guide/sdk
     - theme: sponsor
       text: ☕ 赞助我们
       link: /sponsor
