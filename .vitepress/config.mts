@@ -41,7 +41,7 @@ export default defineConfig({
     config: (md) => {
       md.set({ breaks: true,typographer: true })
       md.use(footnote)
-      console.log(md.render("仓颉语言编译器目前分为两个版本，分别是通用版与鸿蒙版。前者支持在`Linux` 、 `Windows` 和 `MacOs` 下编译与运行。后者则只支持以HarmonyOs APP的方式运行[^1]。 "))
+      // console.log(md.render("仓颉语言编译器目前分为两个版本，分别是通用版与鸿蒙版。前者支持在`Linux` 、 `Windows` 和 `MacOs` 下编译与运行。后者则只支持以HarmonyOs APP的方式运行[^1]。 "))
     }
   }
 })
